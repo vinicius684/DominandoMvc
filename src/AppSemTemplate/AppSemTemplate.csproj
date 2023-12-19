@@ -16,4 +16,26 @@
 	<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.8" />
 </ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Modulos_AreaComOutroNome\Produtos\Data\" />
+	  <Folder Include="Modulos_AreaComOutroNome\Produtos\Models\" />
+	  <Folder Include="Modulos_AreaComOutroNome\Vendas\Data\" />
+	  <Folder Include="Modulos_AreaComOutroNome\Vendas\Models\" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<Content Update="Modulos_AreaComOutroNome\Vendas\Views\Shared\_Layout.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+		<Content Update="Modulos_AreaComOutroNome\Vendas\Views\_ViewImports.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+		<Content Update="Modulos_AreaComOutroNome\Vendas\Views\_ViewStart.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
 </Project>
