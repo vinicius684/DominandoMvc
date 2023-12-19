@@ -26,3 +26,6 @@ C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNet
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net7.0\AppSemTemplate.pdb
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net7.0\AppSemTemplate.genruntimeconfig.cache
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net7.0\ref\AppSemTemplate.dll
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net7.0\libman.json
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net7.0\AppSemTemplate.staticwebassets.runtime.json
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net7.0\bundleconfig.json
