@@ -1,6 +1,7 @@
 ﻿using AppSemTemplate.Data;
 using AppSemTemplate.Extensions;
 using AppSemTemplate.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,20 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
 
 //builder.Services.AddRouting(options =>
 //    options.ConstraintMap["slugify"] = typeof(RouteSlugifyParameterTransformer));
+
+//outras configura��es HSTS - RElacionado a HTTPS
+builder.Services.AddHsts(options =>
+{
+    options.Preload = true;
+    options.IncludeSubDomains = true;
+    options.MaxAge = TimeSpan.FromDays(60);
+    options.ExcludedHosts.Add("example.com");//imputadr hosts que n�o quero o HSTS
+    options.ExcludedHosts.Add("www.example.com");
+});
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()//Suporte a roles - "Niveis" de autorização
+    .AddEntityFrameworkStores<ApplicationDbContext>();/*Add Identity/Dizendo que o Identity vai consumir esse contexto*/
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -57,6 +72,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthorization();
+
 //app.MapControllerRoute(
 //    name: "default",
 //    pattern: "{controller:slugify=Home}/{action:slugify=Index}/{id?}");
@@ -72,6 +89,8 @@ app.MapAreaControllerRoute("AreaVendas", "Vendas", "Vendas/{controller=Gestao}/{
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapRazorPages();
 
 using (var serviceScope = app.Services.CreateScope())//acessando Container de Di de uma objeto Singleton
 {
