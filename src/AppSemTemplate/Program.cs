@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,8 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews(options => {//Declara o MVC j� utilizando Gobalmente o ValidateAntiforgeryToken (prote��o contra Ataque CSRF)
     options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
 });
-
-
 
 // Adicionando suporte a mudan�a de conven��o da rota das areas.
 builder.Services.Configure<RazorViewEngineOptions>(options =>
@@ -25,8 +22,44 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
 });
 
-//builder.Services.AddRouting(options =>
-//    options.ConstraintMap["slugify"] = typeof(RouteSlugifyParameterTransformer));
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();// inje��o de dependencia do TagHelper
+
+//inje��es de dependencia 
+//builder.Services.AddScoped<IOperacao, Operacao>(); //A interface que implementa e a Classe - Toda vez que ver um IOperacao, saiba que quem a Implementa � a classe Operacao
+//exemplos ciclos de vida diferentes
+builder.Services.AddTransient<IOperacaoTransient, Operacao>();
+builder.Services.AddScoped<IOperacaoScoped, Operacao>();
+builder.Services.AddSingleton<IOperacaoSingleton, Operacao>();
+builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
+builder.Services.AddTransient<OperacaoService>();
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();/*Filtro de erros do DB*/
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()//Suporte a roles - "Niveis" de autorização
+    .AddEntityFrameworkStores<ApplicationDbContext>();/*Add Identity/Dizendo que o Identity vai consumir esse contexto*/
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("PodeExcluirPermanentemente", policy =>
+        policy.RequireRole("Admin"));
+
+    options.AddPolicy("VerProdutos", policy =>
+        policy.RequireClaim("Produtos", "VI"));//Adicionando Claim atraves de policy
+}
+);
+
+////isso tem a ver com RouteSlugFy - transformador de par�metro
+//builder.Services.AddRouting(options => 
+//        options.ConstraintMap["slugify"] = typeof(RouteSlugifyParameterTransformer));
+
 
 //outras configura��es HSTS - RElacionado a HTTPS
 builder.Services.AddHsts(options =>
@@ -37,23 +70,6 @@ builder.Services.AddHsts(options =>
     options.ExcludedHosts.Add("example.com");//imputadr hosts que n�o quero o HSTS
     options.ExcludedHosts.Add("www.example.com");
 });
-
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()//Suporte a roles - "Niveis" de autorização
-    .AddEntityFrameworkStores<ApplicationDbContext>();/*Add Identity/Dizendo que o Identity vai consumir esse contexto*/
-
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-//builder.Services.AddScoped<IOperacao, Operacao>();
-builder.Services.AddTransient<IOperacaoTransient, Operacao>();
-builder.Services.AddScoped<IOperacaoScoped, Operacao>();
-builder.Services.AddSingleton<IOperacaoSingleton, Operacao>();
-builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
-
-builder.Services.AddTransient<OperacaoService>();
-
-builder.Services.AddDbContext<ApplicationDbContext>(o =>
-    o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
@@ -68,13 +84,13 @@ else
 
 app.UseHttpsRedirection();//adiciona um middleware que pega quando chamar um site HTTP e muda pra HTTPS / Usar HTTPS
 
-app.UseStaticFiles();
+app.UseStaticFiles();//Add Uso de Arquivos estaticos - wwwroot
 
-app.UseRouting();
+app.UseRouting();//Add Uso de Rotas
 
-app.UseAuthorization();
+app.UseAuthorization();//Uso de Authorization - Identity
 
-//app.MapControllerRoute(
+//app.MapControllerRoute(//RotaSlugify
 //    name: "default",
 //    pattern: "{controller:slugify=Home}/{action:slugify=Index}/{id?}");
 
@@ -86,11 +102,9 @@ app.UseAuthorization();
 app.MapAreaControllerRoute("AreaProdutos", "Produtos", "Produtos/{controller=Cadastro}/{action=Index}/{id?}");
 app.MapAreaControllerRoute("AreaVendas", "Vendas", "Vendas/{controller=Gestao}/{action=Index}/{id?}");
 
-app.MapControllerRoute(
+app.MapControllerRoute(//Add Rota Default
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapRazorPages();
 
 using (var serviceScope = app.Services.CreateScope())//acessando Container de Di de uma objeto Singleton
 {
@@ -101,5 +115,8 @@ using (var serviceScope = app.Services.CreateScope())//acessando Container de Di
     Console.WriteLine("Direto da Program.cs" + singService.OperacaoId);
 }
 
+
+app.MapRazorPages();
 app.Run();
 
+//site.com/meus-pedidos/pedidos-cancelados
