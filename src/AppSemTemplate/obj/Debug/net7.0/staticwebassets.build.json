@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YR5RLY7ICMGUCYoMDtveqzacEhRmaU6h60xSSSyH3mc=",
+  "Source": "AppSemTemplate",
+  "BasePath": "_content/AppSemTemplate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
