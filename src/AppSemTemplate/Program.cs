@@ -1,5 +1,6 @@
 ﻿using AppSemTemplate.Data;
 using AppSemTemplate.Extensions;
+using AppSemTemplate.Services;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,6 +22,14 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
 //    options.ConstraintMap["slugify"] = typeof(RouteSlugifyParameterTransformer));
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+//builder.Services.AddScoped<IOperacao, Operacao>();
+builder.Services.AddTransient<IOperacaoTransient, Operacao>();
+builder.Services.AddScoped<IOperacaoScoped, Operacao>();
+builder.Services.AddSingleton<IOperacaoSingleton, Operacao>();
+builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
+
+builder.Services.AddTransient<OperacaoService>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(o =>
     o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
