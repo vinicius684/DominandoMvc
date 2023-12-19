@@ -16,6 +16,42 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Produtos/Views/Cadastro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFByb2R1dG9zXFZpZXdzXENhZGFzdHJvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Produtos/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFByb2R1dG9zXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Produtos/Views/_ViewImports - Cópia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFByb2R1dG9zXFZpZXdzXF9WaWV3SW1wb3J0cyAtIEPDs3BpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Produtos/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFByb2R1dG9zXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Produtos/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFByb2R1dG9zXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Vendas/Views/Gestao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFZlbmRhc1xWaWV3c1xHZXN0YW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Vendas/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFZlbmRhc1xWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Vendas/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFZlbmRhc1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Modulos_AreaComOutroNome/Vendas/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvc19BcmVhQ29tT3V0cm9Ob21lXFZlbmRhc1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,10 +92,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Views/_ViewImports - Cópia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzIC0gQ8OzcGlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vpinh/OneDrive/Área de Trabalho/Desenvolvedor.io/__3DominandoAspDotNetMvc/ConhecimentosEssenciais/src/AppSemTemplate/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = X1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
