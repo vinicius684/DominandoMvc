@@ -5,6 +5,7 @@ using AppSemTemplate.Models;
 
 namespace AppSemTemplate.Controllers
 {
+    [Route("meus-produtos")]
     public class ProdutosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -14,7 +15,6 @@ namespace AppSemTemplate.Controllers
             _context = context;
         }
 
-        // GET: Produtos
         public async Task<IActionResult> Index()
         {
             return _context.Produto != null ?
@@ -22,6 +22,7 @@ namespace AppSemTemplate.Controllers
                         Problem("Entity set 'AppDbContext.Produtos'  is null.");
         }
 
+        [Route("detalhes/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Produto == null)
@@ -39,14 +40,15 @@ namespace AppSemTemplate.Controllers
             return View(produto);
         }
 
-        public IActionResult Create()
+        [Route("criar-novo")]
+        public IActionResult CriarNovoProduto()
         {
-            return View();
+            return View("Create");
         }
 
-        [HttpPost]
+        [HttpPost("criar-novo")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Imagem,Valor")] Produto produto)
+        public async Task<IActionResult> CriarNovoProduto([Bind("Id,Nome,Imagem,Valor")] Produto produto)
         {
             if (ModelState.IsValid)
             {
@@ -54,9 +56,10 @@ namespace AppSemTemplate.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(produto);
+            return View("Create", produto);
         }
 
+        [Route("editar-produto/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Produto == null)
@@ -72,7 +75,7 @@ namespace AppSemTemplate.Controllers
             return View(produto);
         }
 
-        [HttpPost]
+        [HttpPost("editar-produto/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Imagem,Valor")] Produto produto)
         {
@@ -104,7 +107,7 @@ namespace AppSemTemplate.Controllers
             return View(produto);
         }
 
-
+        [Route("excluir/{id}")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Produto == null)
@@ -122,7 +125,7 @@ namespace AppSemTemplate.Controllers
             return View(produto);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost("excluir/{id}"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
