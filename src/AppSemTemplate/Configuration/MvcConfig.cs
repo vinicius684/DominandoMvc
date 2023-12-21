@@ -3,6 +3,7 @@ using AppSemTemplate.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace AppSemTemplate.Configuration
 {
@@ -15,7 +16,8 @@ namespace AppSemTemplate.Configuration
                 .SetBasePath(builder.Environment.ContentRootPath)//referencia ao csproj
                 .AddJsonFile("appsettings.json", true, true)//true, true - se é obrigado a ter, se tem que reiniciar a app ao fazer uma mudança na estrutura appsettings(?) - em produção por exemplo reinicia a app  (pode ou não pode n entendi              
                 .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true)
-                .AddEnvironmentVariables();
+                .AddEnvironmentVariables()
+                .AddUserSecrets(Assembly.GetExecutingAssembly(),true);//adicionando arquivos de configuração secrets
 
 
             builder.Services.AddControllersWithViews(options =>
