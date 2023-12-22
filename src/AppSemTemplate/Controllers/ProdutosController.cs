@@ -26,9 +26,9 @@ namespace AppSemTemplate.Controllers
         }
 
         // GET: Produtos
-        //[AllowAnonymous]
         //[Authorize(Policy = "VerProdutos")]
-        [ClaimsAuthorize("Produtos", "VI")]
+        [AllowAnonymous]
+       // [ClaimsAuthorize("Produtos", "VI")]
         public async Task<IActionResult> Index()
         {
             var user = HttpContext.User.Identity;
@@ -59,7 +59,7 @@ namespace AppSemTemplate.Controllers
         }
 
         // GET: Produtos/Create
-        [ClaimsAuthorize("Produtos", "AD")]//customizando autenticação
+        [ClaimsAuthorize("Produtos", "ADD")]//customizando autenticação
         [Route("criar-novo")]
         public IActionResult CriarNovoProduto()
         {
