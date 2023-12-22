@@ -60,10 +60,12 @@ namespace AppSemTemplate.Configuration
         public static WebApplication UseMvcConfiguration(this  WebApplication app) {//mais generico - recebendo config de várias responsabildiades da app
             if (app.Environment.IsDevelopment())
             {
-
+                app.UseDeveloperExceptionPage();//middleware de exception - retorna uma página de erro amigavel quando estiver no ambiente de dev
             }
             else
             {
+                app.UseExceptionHandler("/erro/500");//middleware de manipulação de excessoes
+                app.UseStatusCodePagesWithRedirects("/erro/{0}");
                 app.UseHsts(); //Adiciona um Hearder no Request, dizendo pro browser � obrigado a trabalhar no https / Usar HTTPS -  Uma vez implementado a aplica��o n�o vai funcionar HTTP
             }
 

