@@ -46,6 +46,18 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Elmah.Io.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.56, )"
+            },
+            "Elmah.Io.AspNetCore.ExtensionsLogging": {
+              "target": "Package",
+              "version": "[5.0.44, )"
+            },
+            "Elmah.Io.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.44, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.14, )"

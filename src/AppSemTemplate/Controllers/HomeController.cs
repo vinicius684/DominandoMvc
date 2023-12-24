@@ -9,17 +9,26 @@ namespace AppSemTemplate.Controllers
     {
         private readonly IConfiguration Configuration;//injeção
         private readonly ApiConfiguration ApiConfig;
+        private readonly ILogger<HomeController> Logger;
 
         public HomeController(IConfiguration configuration,
-            IOptions<ApiConfiguration> apiConfig) 
+                                IOptions<ApiConfiguration> apiConfig, 
+                                ILogger<HomeController> logger) 
         {
             Configuration = configuration;
             ApiConfig = apiConfig.Value;
+            Logger = logger;
         }
         //
 
         public IActionResult Index()
         {
+            //Mensagem dos tipos de log
+            Logger.LogInformation("Information");
+            Logger.LogCritical("Critical");
+            Logger.LogWarning("Warning");
+            Logger.LogError("Error");
+
             var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");//Obtendo ambiente?
 
             //1 popular dadoss da appsettings.Dev na APIConfiguration

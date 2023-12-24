@@ -9,8 +9,9 @@ using AppSemTemplate.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder 
+builder
     .AddMvcConfiguration()
+    .AddElmahConfiguration()
     .AddIdentityConfiguration()
     .AddDependencyInjectionConfiguration();
 
