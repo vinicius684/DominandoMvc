@@ -12,6 +12,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Elmah.Io.AspNetCore" Version="5.0.56" />
+		<PackageReference Include="Elmah.Io.AspNetCore.ExtensionsLogging" Version="5.0.44" />
+		<PackageReference Include="Elmah.Io.Extensions.Logging" Version="5.0.44" />
 		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.14" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.14" />
