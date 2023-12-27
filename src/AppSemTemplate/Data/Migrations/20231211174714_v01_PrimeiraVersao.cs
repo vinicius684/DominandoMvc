@@ -58,7 +58,7 @@ namespace AppSemTemplate.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Imagem = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Valor = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Valor = table.Column<string>(type: "decimal", nullable: true)
                 },
                 constraints: table =>
                 {
