@@ -59,7 +59,7 @@ namespace AppSemTemplate.Controllers
         }
 
         // GET: Produtos/Create
-        [ClaimsAuthorize("Produtos", "ADD")]//customizando autenticação
+        [ClaimsAuthorize("Produtos", "AD")]//customizando autenticação
         [Route("criar-novo")]
         public IActionResult CriarNovoProduto()
         {
