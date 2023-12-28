@@ -1,6 +1,8 @@
 ﻿using AppSemTemplate.Configuration;
 using AppSemTemplate.Models;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
 
 namespace AppSemTemplate.Controllers
@@ -10,16 +12,19 @@ namespace AppSemTemplate.Controllers
         private readonly IConfiguration Configuration;//injeção
         private readonly ApiConfiguration ApiConfig;
         private readonly ILogger<HomeController> Logger;
+        private readonly IStringLocalizer<HomeController> _localizer;//injeção p usar o localzier
 
         public HomeController(IConfiguration configuration,
                                 IOptions<ApiConfiguration> apiConfig, 
-                                ILogger<HomeController> logger) 
+                                ILogger<HomeController> logger,
+                                IStringLocalizer<HomeController> localizer) 
         {
             Configuration = configuration;
             ApiConfig = apiConfig.Value;
             Logger = logger;
+            _localizer = localizer;
         }
-        //
+        
 
         public IActionResult Index()
         {
@@ -44,7 +49,21 @@ namespace AppSemTemplate.Controllers
             //4?
             var domain = ApiConfig.Domain;
 
+            ViewData["Message"] = _localizer["Seja bem vindo!"];
+
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult SetLanguage(string culture, string returnUrl)//criar um cookie onde vai guardar a cultura e definir a expiração desse cookie em 1 ano
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+            );
+
+            return LocalRedirect(returnUrl);
         }
 
         [Route("teste")]

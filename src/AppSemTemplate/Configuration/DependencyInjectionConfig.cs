@@ -1,6 +1,8 @@
 ﻿using AppSemTemplate.Data;
+using AppSemTemplate.Extensions;
 using AppSemTemplate.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 
 namespace AppSemTemplate.Configuration
 {
@@ -17,6 +19,8 @@ namespace AppSemTemplate.Configuration
             builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
 
             builder.Services.AddTransient<OperacaoService>();
+
+            builder.Services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>(); //Registrando Provider para Data Annotation customizado(Moeda)
 
             return builder;
         }

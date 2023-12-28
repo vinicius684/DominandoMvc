@@ -27,7 +27,9 @@ namespace AppSemTemplate.Configuration
                 options.Filters.Add(typeof(FIltroAuditoria));//filtro de log
 
                 MvcOptionsConfig.ConfigurarMensagensDeModelBinding(options.ModelBindingMessageProvider);//informando ao mvc classe de configuração de mensagens do Provider
-            });
+            })
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
 
             // Adicionando suporte a mudan�a de conven��o da rota das areas.
             builder.Services.Configure<RazorViewEngineOptions>(options =>
