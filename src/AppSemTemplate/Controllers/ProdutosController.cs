@@ -14,7 +14,7 @@ namespace AppSemTemplate.Controllers
 {
 
     //[Authorize(Roles = "Admin")]
-    [Authorize]
+    //[Authorize]
     [Route("meus-produtos")]
     public class ProdutosController : Controller
     {

@@ -1,4 +1,5 @@
 ﻿using AppSemTemplate.Extensions;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,8 +14,10 @@ namespace AppSemTemplate.Models
         [StringLength(30, MinimumLength = 2, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres")]
         public string? Nome { get; set; }
 
-        [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        [StringLength(30, MinimumLength = 2, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres")]
+        [NotMapped]
+        [DisplayName("Imagem do Produto")]
+        public IFormFile? ImagemUpload { get; set; }//campo para upload de arquivo - Interessante utilizar ViewModel
+
         public string? Imagem { get; set; }
 
         [Moeda]
