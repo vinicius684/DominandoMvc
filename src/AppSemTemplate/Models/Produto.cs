@@ -16,7 +16,7 @@ namespace AppSemTemplate.Models
 
         [NotMapped]
         [DisplayName("Imagem do Produto")]
-        public IFormFile? ImagemUpload { get; set; }//campo para upload de arquivo - Interessante utilizar ViewModel
+        public IFormFile? ImagemUpload { get; set; }//IFormFile - Representa um objeto enviado atravez de uma requisição - campo para upload de arquivo - Interessandante utilizar ViewModel(?) 
 
         public string? Imagem { get; set; }
 

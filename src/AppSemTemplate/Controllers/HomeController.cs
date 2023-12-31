@@ -67,7 +67,7 @@ namespace AppSemTemplate.Controllers
         }
 
         [Route("teste")]
-        public IActionResult Teste()
+        public IActionResult Teste()//view preparada para dar o máximo de info possível para o dev - tratamento de erros ambiente desenvolvimento(config na MvcCOnfig)
         {
             throw new Exception("ALGO ERRADO NÃO ESTAVA CERTO!");
 

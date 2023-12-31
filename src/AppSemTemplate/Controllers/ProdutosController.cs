@@ -72,10 +72,20 @@ namespace AppSemTemplate.Controllers
         //[ValidateAntiForgeryToken]
         [ClaimsAuthorize("Produtos", "AD")]
         [HttpPost("criar-novo")]
-        public async Task<IActionResult> CriarNovoProduto([Bind("Id,Nome,Imagem,Valor")] Produto produto)
+        public async Task<IActionResult> CriarNovoProduto([Bind("Id,Nome,ImagemUpload,Valor")] Produto produto)
         {
             if (ModelState.IsValid)
             {
+                //Upload
+                var imgPrefixo = Guid.NewGuid() + "-";
+                if (!await UploadArquivo(produto.ImagemUpload, imgPrefixo))//se não der certo o upload
+                {
+                    return View(produto);
+                }
+
+                produto.Imagem = imgPrefixo + produto.ImagemUpload.FileName;//Imagem recebe o caminho
+                //
+
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -107,17 +117,32 @@ namespace AppSemTemplate.Controllers
         [ClaimsAuthorize("Produtos", "ED")]
         [HttpPost("editar-produto/{id}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Imagem,Valor")] Produto produto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ImagemUpload,Valor")] Produto produto)
         {
             if (id != produto.Id)
             {
                 return NotFound();
             }
+            //
+            var produtoDb = await _context.Produto.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
 
             if (ModelState.IsValid)
             {
                 try
                 {
+                    produto.Imagem = produtoDb.Imagem;
+
+                    if (produto.ImagemUpload != null)
+                    {
+                        var imgPrefixo = Guid.NewGuid() + "_";
+                        if (!await UploadArquivo(produto.ImagemUpload, imgPrefixo))
+                        {
+                            return View(produto);
+                        }
+
+                        produto.Imagem = imgPrefixo + produto.ImagemUpload.FileName;
+                    }
+                    //
                     _context.Update(produto);
                     await _context.SaveChangesAsync();
                 }
@@ -182,6 +207,27 @@ namespace AppSemTemplate.Controllers
         private bool ProdutoExists(int id)
         {
             return (_context.Produto?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        private async Task<bool> UploadArquivo(IFormFile arquivo, string imgPrefixo)//Método - imgprefixo para um arquivo de mesmo nome não sobrepor outro
+        {
+            if (arquivo.Length <= 0) return false;
+
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgPrefixo + arquivo.FileName);
+
+            if (System.IO.File.Exists(path))
+            {
+                ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome!");
+                return false;
+            }
+
+            //vai pegar o arquivo, transforma-ló em uma file stream e salva-lo no banco
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await arquivo.CopyToAsync(stream);
+            }
+
+            return true;
         }
     }
 }

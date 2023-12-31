@@ -70,8 +70,9 @@ namespace AppSemTemplate.Configuration
             }
             else
             {
-                app.UseExceptionHandler("/erro/500");//middleware de manipulação de excessoes
-                app.UseStatusCodePagesWithRedirects("/erro/{0}");
+                app.UseExceptionHandler("/erro/500");//middleware de manipulação de excessoes - parâmetro = camimho da action
+                app.UseStatusCodePagesWithRedirects("/erro/{0}");//redirecionamento de status code - status veriável
+
                 app.UseHsts(); //Adiciona um Hearder no Request, dizendo pro browser � obrigado a trabalhar no https / Usar HTTPS -  Uma vez implementado a aplica��o n�o vai funcionar HTTP
             }
 
