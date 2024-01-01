@@ -10,7 +10,7 @@ namespace AppSemTemplate.Configuration
 {
     public static class MvcConfig
     {
-        public static WebApplicationBuilder AddMvcConfiguration(this WebApplicationBuilder builder)////extension method, extendendo tipo/Classe WebApplicationBuilder, retornando um WebApplicationBuilder
+        public static WebApplicationBuilder AddMvcConfiguration(this WebApplicationBuilder builder)////extension method, extendendo tipo/Classe WebApplicationBuilder, retornando um WebApplicationBuilder - Dar suporte a
         {
 
             builder.Configuration//configuração para adicionar um pouco mais de suporte na appsettings, de acordo com o perfil que a app vai subir
@@ -20,6 +20,7 @@ namespace AppSemTemplate.Configuration
                 .AddEnvironmentVariables()
                 .AddUserSecrets(Assembly.GetExecutingAssembly(),true);//adicionando arquivos de configuração secrets
 
+            builder.Services.AddResponseCaching();//add middleware do response caching
 
             builder.Services.AddControllersWithViews(options =>
             {//Declara o MVC j� utilizando Gobalmente o ValidateAntiforgeryToken (prote��o contra Ataque CSRF)
@@ -63,7 +64,7 @@ namespace AppSemTemplate.Configuration
             return builder;
         }
 
-        public static WebApplication UseMvcConfiguration(this  WebApplication app) {//mais generico - recebendo config de várias responsabildiades da app
+        public static WebApplication UseMvcConfiguration(this  WebApplication app) {//mais generico - recebendo config de várias responsabildiades da app - Dizer que vou usar
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();//middleware de exception - retorna uma página de erro amigavel quando estiver no ambiente de dev
@@ -75,6 +76,8 @@ namespace AppSemTemplate.Configuration
 
                 app.UseHsts(); //Adiciona um Hearder no Request, dizendo pro browser � obrigado a trabalhar no https / Usar HTTPS -  Uma vez implementado a aplica��o n�o vai funcionar HTTP
             }
+
+            app.UseResponseCaching();//dizendo que vou usar o middleware de Response caching
 
             app.UseGlobalizationConfig();
 

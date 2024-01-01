@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kc3BUGUW/SDOrqSsIxDFgtvPRAA+xgGAz4XLgS/MCk0=",
+  "Hash": "tVOT+9puW2sN405z6xBMBK6iJMYW4kFnRxtJrYgKeqc=",
   "Source": "AppSemTemplate",
   "BasePath": "_content/AppSemTemplate",
   "Mode": "Default",
@@ -1207,6 +1207,23 @@
       "OriginalItemSpec": "wwwroot\\images\\8ad9cc46-b106-4361-b84d-c2c7b534469e-Power Automate_PowerApps _Sharepoint.jpg"
     },
     {
+      "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\9ea38d4c-6631-494a-a48d-75ee3153e9fc-AFundamentos ASP.NET Core MVC (1).png",
+      "SourceId": "AppSemTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\",
+      "BasePath": "_content/AppSemTemplate",
+      "RelativePath": "images/9ea38d4c-6631-494a-a48d-75ee3153e9fc-AFundamentos ASP.NET Core MVC (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9ea38d4c-6631-494a-a48d-75ee3153e9fc-AFundamentos ASP.NET Core MVC (1).png"
+    },
+    {
       "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\a94bce52-d791-459a-ab50-9427914e56eb-Power Automate_PowerApps _Sharepoint.pdf",
       "SourceId": "AppSemTemplate",
       "SourceType": "Discovered",
@@ -1224,6 +1241,40 @@
       "OriginalItemSpec": "wwwroot\\images\\a94bce52-d791-459a-ab50-9427914e56eb-Power Automate_PowerApps _Sharepoint.pdf"
     },
     {
+      "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\aa55dfc2-c2df-4669-8930-dbe9f979a34d_Heranca.png",
+      "SourceId": "AppSemTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\",
+      "BasePath": "_content/AppSemTemplate",
+      "RelativePath": "images/aa55dfc2-c2df-4669-8930-dbe9f979a34d_Heranca.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aa55dfc2-c2df-4669-8930-dbe9f979a34d_Heranca.png"
+    },
+    {
+      "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\c3f58169-8a99-4697-9dbf-494e18324da0_Power Automate_PowerApps _Sharepoint.pdf",
+      "SourceId": "AppSemTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\",
+      "BasePath": "_content/AppSemTemplate",
+      "RelativePath": "images/c3f58169-8a99-4697-9dbf-494e18324da0_Power Automate_PowerApps _Sharepoint.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c3f58169-8a99-4697-9dbf-494e18324da0_Power Automate_PowerApps _Sharepoint.pdf"
+    },
+    {
       "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\CSS.jpg",
       "SourceId": "AppSemTemplate",
       "SourceType": "Discovered",
@@ -1239,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\CSS.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\d1ed0139-66a8-4505-9639-db62c29b8ded_whatsapp (3).png",
+      "SourceId": "AppSemTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\",
+      "BasePath": "_content/AppSemTemplate",
+      "RelativePath": "images/d1ed0139-66a8-4505-9639-db62c29b8ded_whatsapp (3).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d1ed0139-66a8-4505-9639-db62c29b8ded_whatsapp (3).png"
     },
     {
       "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\ec542ddc-0062-4122-a3c1-0ad59c953ce4-Power BI.jpg",
