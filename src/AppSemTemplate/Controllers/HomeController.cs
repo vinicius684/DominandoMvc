@@ -24,8 +24,8 @@ namespace AppSemTemplate.Controllers
             Logger = logger;
             _localizer = localizer;
         }
-        
 
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Any, NoStore =false )]//segundos, location, 
         public IActionResult Index()
         {
             //Mensagem dos tipos de log
@@ -50,6 +50,8 @@ namespace AppSemTemplate.Controllers
             var domain = ApiConfig.Domain;
 
             ViewData["Message"] = _localizer["Seja bem vindo!"];
+
+            ViewData["Horario"] = DateTime.Now;// para ver ex do cache
 
             return View();
         }
