@@ -53,6 +53,12 @@ namespace AppSemTemplate.Controllers
 
             ViewData["Horario"] = DateTime.Now;// para ver ex do cache
 
+            //acessando dados do cookie por meio da controller
+            if (Request.Cookies.TryGetValue("MeuCookie", out string? cookieValue))//request que está dentro da classe Controller - metodo TryGet: tenta pegar os dados ou trata falha - parâmetros: Nome do cookie, out string saída_do_método)
+            {
+                ViewData["MeuCookie"] = cookieValue;
+            }
+
             return View();
         }
 
@@ -60,12 +66,25 @@ namespace AppSemTemplate.Controllers
         public IActionResult SetLanguage(string culture, string returnUrl)//criar um cookie onde vai guardar a cultura e definir a expiração desse cookie em 1 ano
         {
             Response.Cookies.Append(
-                CookieRequestCultureProvider.DefaultCookieName,
-                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                CookieRequestCultureProvider.DefaultCookieName,//nome
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),//valor do cookie
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }//duração
             );
 
             return LocalRedirect(returnUrl);
+        }
+
+        [Route("cookies")]
+        public IActionResult Cookie()
+        {
+            var cookieOptions = new CookieOptions
+            {
+                Expires = DateTime.Now.AddHours(1)//duração
+            };
+
+            Response.Cookies.Append("MeuCookie", "Dados do Cookie", cookieOptions);//mesmos parâmetros do Append do SetLanguage, porém passados de forma diferente 
+
+            return View();
         }
 
         [Route("teste")]

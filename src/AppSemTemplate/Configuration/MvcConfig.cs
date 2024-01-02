@@ -32,6 +32,13 @@ namespace AppSemTemplate.Configuration
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
                 .AddDataAnnotationsLocalization();
 
+            builder.Services.Configure<CookiePolicyOptions>(options =>//dadndo suporte a cookies LGPD
+            {
+                options.CheckConsentNeeded = context => true;//verificar consentimento do usuário
+                options.MinimumSameSitePolicy = SameSiteMode.None;//se se aplica em todos os dominios que venham dessa raíz Ex: areas
+                options.ConsentCookieValue = "true";//quando o cookie for consentido "yes" -  vai gravar a informação true
+            });
+
             // Adicionando suporte a mudan�a de conven��o da rota das areas.
             builder.Services.Configure<RazorViewEngineOptions>(options =>
             {
@@ -87,6 +94,8 @@ namespace AppSemTemplate.Configuration
             app.UseHttpsRedirection();//adiciona um middleware que pega quando chamar um site HTTP e muda pra HTTPS / Usar HTTPS
 
             app.UseStaticFiles();//Add Uso de Arquivos estaticos - wwwroot
+
+            app.UseCookiePolicy();
 
             app.UseRouting();//Add Uso de Rotas
 
