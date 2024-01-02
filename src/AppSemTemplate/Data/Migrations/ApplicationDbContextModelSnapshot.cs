@@ -31,16 +31,18 @@ namespace AppSemTemplate.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Imagem")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<decimal>("Valor")
+                    b.Property<bool>("Processado")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal?>("Valor")
+                        .IsRequired()
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");

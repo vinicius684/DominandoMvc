@@ -81,6 +81,26 @@
       "PackagePath": "staticwebassets\\images\\ec542ddc-0062-4122-a3c1-0ad59c953ce4-Power BI.jpg"
     },
     {
+      "Id": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\logo_watermark.png",
+      "PackagePath": "staticwebassets\\images\\logo_watermark.png"
+    },
+    {
+      "Id": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\prod_6416eef1-f27c-40d5-887c-ae7274a924ba-CSS.jpg",
+      "PackagePath": "staticwebassets\\images\\prod_6416eef1-f27c-40d5-887c-ae7274a924ba-CSS.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\prod_HTML.jpg",
+      "PackagePath": "staticwebassets\\images\\prod_HTML.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\prod_JQuery.jpg",
+      "PackagePath": "staticwebassets\\images\\prod_JQuery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\prod_Razor.jpg",
+      "PackagePath": "staticwebassets\\images\\prod_Razor.jpg"
+    },
+    {
       "Id": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\js\\cep.js",
       "PackagePath": "staticwebassets\\js\\cep.js"
     },

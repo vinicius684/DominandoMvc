@@ -24,6 +24,7 @@ namespace AppSemTemplate.Models
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal? Valor { get; set; }//validar o valor conforme nossa moeda
 
+        public bool Processado { get; set; }
     }
 }
 

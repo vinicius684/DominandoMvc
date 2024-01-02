@@ -68,6 +68,8 @@ namespace AppSemTemplate.Configuration
             builder.Services.Configure<ApiConfiguration>(
                 builder.Configuration.GetSection(ApiConfiguration.ConfigName));
 
+            builder.Services.AddHostedService<ImageWatermarkService>();//habilitado uso do serviço de background
+
             return builder;
         }
 
