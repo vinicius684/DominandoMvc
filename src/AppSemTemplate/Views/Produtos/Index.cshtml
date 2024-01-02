@@ -6,7 +6,7 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>
-    <a class="btn btn-primary" asp-action="CriarNovoProduto"><spam class="fa fa-plus"></spam> Novo</a>
+    <a class="btn btn-primary" supress-by-claim-name="Produtos" supress-by-claim-value="AD" asp-action="CriarNovoProduto"><spam class="fa fa-plus"></spam> Novo</a>
 </p>
 
 <table class="table">
@@ -41,7 +41,7 @@
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detalhesModal" data-imagem="@item.Imagem" data-id="@item.Id" data-nome="@item.Nome" data-valor="@item.Valor"><spam class="fa fa-search"></spam></button>
                     <botao tipo-botao="Detalhes" route-id="@item.Id"></botao>
                     <botao tipo-botao="Editar" route-id="@item.Id"></botao>
-                    <botao tipo-botao="Excluir" route-id="@item.Id"></botao>
+                    <botao disable-by-claim-name="Produtos" disable-by-claim-value="EX2" tipo-botao="Excluir" route-id="@item.Id"></botao>
                     <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirModal" data-id="@item.Id"><spam class="fa fa-trash"></spam></button>
 
                     @*<a asp-action="Details" class="btn btn-info" asp-route-id="@item.Id"><spam class="fa fa-search"></a>
