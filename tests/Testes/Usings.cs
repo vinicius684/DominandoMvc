@@ -1,0 +1,1 @@
+global using Xunit;//trazer o xUnit de forma global

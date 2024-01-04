@@ -2,6 +2,7 @@
     padding-top: 10px;
 }
 
+
 .form-group {
     padding-bottom: 10px;
 }
@@ -21,4 +22,11 @@
 .custom-file-button:hover label {
     background-color: #dde0e3;
     cursor: pointer;
+}
+
+#retratilSection {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
 }

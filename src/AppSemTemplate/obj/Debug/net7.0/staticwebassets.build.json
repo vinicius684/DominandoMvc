@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KAAJvX60Hmes9vdF/WDb7cLdVf3CeSWDJe6xLXOpXQE=",
+  "Hash": "vmvxLNSgQ7E+TP6NzDuVrq9YWjkWwYlKprDRAiCprX0=",
   "Source": "AppSemTemplate",
   "BasePath": "_content/AppSemTemplate",
   "Mode": "Default",
@@ -1139,6 +1139,23 @@
       "OriginalItemSpec": "wwwroot\\images\\4d3e2f9b-ac3e-4fdf-aa05-36e270280faa-BIniciando com ASP.NET Core.png"
     },
     {
+      "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\60d88482-806b-4f24-a607-1542983e11ef-BIniciando com ASP.NET Core.png",
+      "SourceId": "AppSemTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\",
+      "BasePath": "_content/AppSemTemplate",
+      "RelativePath": "images/60d88482-806b-4f24-a607-1542983e11ef-BIniciando com ASP.NET Core.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\60d88482-806b-4f24-a607-1542983e11ef-BIniciando com ASP.NET Core.png"
+    },
+    {
       "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\6416eef1-f27c-40d5-887c-ae7274a924ba-CSS.jpg",
       "SourceId": "AppSemTemplate",
       "SourceType": "Discovered",
@@ -1375,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo_watermark.png"
+    },
+    {
+      "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\prod_60d88482-806b-4f24-a607-1542983e11ef-BIniciando com ASP.NET Core.png",
+      "SourceId": "AppSemTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\",
+      "BasePath": "_content/AppSemTemplate",
+      "RelativePath": "images/prod_60d88482-806b-4f24-a607-1542983e11ef-BIniciando com ASP.NET Core.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\prod_60d88482-806b-4f24-a607-1542983e11ef-BIniciando com ASP.NET Core.png"
     },
     {
       "Identity": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\prod_6416eef1-f27c-40d5-887c-ae7274a924ba-CSS.jpg",
