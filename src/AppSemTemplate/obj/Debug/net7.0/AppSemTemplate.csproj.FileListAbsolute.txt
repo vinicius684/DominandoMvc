@@ -274,3 +274,6 @@ C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNet
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net7.0\en\AppSemTemplate.resources.dll
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net7.0\AppSemTemplate.Resources.Models.Produto.en.resources
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net7.0\AppSemTemplate.Resources.Views.Shared._SelectLanguagePartial.en.resources
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net7.0\Moq.dll
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

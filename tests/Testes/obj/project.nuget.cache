@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fAItKeVhtHBPjaiz8r8KR2kAw8jsRLcyHwHVJZ/WGgikaSY0ZASfhpt/uOHfz6sGaVp22ryY4bLObkTaGNKhsg==",
+  "dgSpecHash": "/qdVkwaqjvQbF3UjBIR7Q/H4JFQP6+OS+GjmI2jGvGc8+PIo6iQdvrkxbYpWXHxnvPsek0T4MRVHNZ8RRICyOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\tests\\Testes\\Testes.csproj",
   "expectedPackageFiles": [
@@ -122,6 +122,7 @@
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.14\\microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.14\\microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.14\\microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512",
+    "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.14\\microsoft.entityframeworkcore.inmemory.7.0.14.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.14\\microsoft.entityframeworkcore.relational.7.0.14.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.14\\microsoft.entityframeworkcore.sqlserver.7.0.14.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",

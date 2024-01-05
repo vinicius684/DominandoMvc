@@ -31,7 +31,7 @@ namespace AppSemTemplate.Controllers
        // [ClaimsAuthorize("Produtos", "VI")]
         public async Task<IActionResult> Index()
         {
-            var user = HttpContext.User.Identity;
+            var user = HttpContext.User.Identity;//acessando a identidade do usuário associada à requisição HTTP atual
 
             return _context.Produto != null ?
                         View(await _context.Produto.ToListAsync()) :
