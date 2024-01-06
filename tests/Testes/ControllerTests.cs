@@ -8,6 +8,8 @@ using Microsoft.Extensions.Options;
 using Moq;
 using System.Security.Claims;
 using System;
+using AppSemTemplate.Services;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Testes
 {
@@ -30,11 +32,9 @@ namespace Testes
         public void ProdutoController_Index_Sucesso()
         {
             /*Resumo - 
-               criado dbCOntext inMemory - 
-               populado. Agr já consigo validar o resturn - 
-               Db Context não é nulo e retorna uma View
+               criado dbContext inMemory -> populado. Agr já consigo validar o resturn -> Db Context não é nulo e retorna uma View
             
-                Resto do código validar o HttpContext.Identity
+               Resto do código validar o HttpContext.Identity.User
              */
 
             // Arrange
@@ -54,18 +54,20 @@ namespace Testes
 
 
 
-           //Validar o var user = HttpContext.User.Identity; - validação na depuração
+            //Validar o var user = HttpContext.User.Identity; - validação na depuração
             // Identity
-            var mockClaimsIdentity = new Mock<ClaimsIdentity>(); 
-            mockClaimsIdentity.Setup(m => m.Name).Returns("teste@teste.com"); 
+            var mockClaimsIdentity = new Mock<ClaimsIdentity>();
+            mockClaimsIdentity.Setup(m => m.Name).Returns("teste@teste.com");
 
             var principal = new ClaimsPrincipal(mockClaimsIdentity.Object);
 
             var mockContext = new Mock<HttpContext>();
             mockContext.Setup(c => c.User).Returns(principal);
 
+            var imgService = new Mock<IImageUploadService>();
+
             // Controller
-            var controller = new ProdutosController(ctx)
+            var controller = new ProdutosController(ctx, imgService.Object)
             {
                 ControllerContext = new ControllerContext
                 {
@@ -82,12 +84,55 @@ namespace Testes
             // Assert
             Assert.IsType<ViewResult>(result);//validar se é uma view
 
-
-
-
-
-
         }
 
+        [Fact]
+        public void ProdutoController_CriarNovoProduto_Sucess()
+        {
+            
+            // Arrange
+
+            // Dbcontext Options
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+
+            // Contexto
+            var ctx = new ApplicationDbContext(options);//injeção de dependencia da controller
+
+            //Iformfile
+            var fileMock = new Mock<IFormFile>();
+            var fileName = "test.jpg";
+            fileMock.Setup(_ => _.FileName).Returns(fileName);
+
+            //Img Service
+            var imgService = new Mock<IImageUploadService>();
+
+            imgService.Setup(s => s.UploadArquivo(
+                new ModelStateDictionary(),
+                fileMock.Object,
+                It.IsAny<string>()
+                )).ReturnsAsync(true);
+
+            // Controller
+            var controller = new ProdutosController(ctx, imgService.Object);
+
+            //produto
+            var produto = new Produto
+            {
+                Id=1,
+                ImagemUpload = fileMock.Object,
+                Nome = "Teste",
+                Valor = 50
+            };
+
+            // Act         
+            var result = controller.CriarNovoProduto(produto).Result; //.Result é o resultado da task
+
+
+
+            // Assert
+            Assert.IsType<RedirectToActionResult>(result);//validar se é uma view
+        }
     }
 }
