@@ -3321,7 +3321,6 @@
           "Microsoft.AspNetCore.Identity.UI": "7.0.14",
           "Microsoft.AspNetCore.Mvc.TagHelpers": "2.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.14",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.11"
         },

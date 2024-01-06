@@ -18,6 +18,8 @@ namespace AppSemTemplate.Configuration
             builder.Services.AddSingleton<IOperacaoSingleton, Operacao>();
             builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
 
+            builder.Services.AddScoped<IImageUploadService, ImageUploadService>();
+
             builder.Services.AddTransient<OperacaoService>();
 
             builder.Services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>(); //Registrando Provider para Data Annotation customizado(Moeda)

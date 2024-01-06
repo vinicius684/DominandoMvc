@@ -9,6 +9,7 @@ using AppSemTemplate.Data;
 using AppSemTemplate.Models;
 using Microsoft.AspNetCore.Authorization;
 using AppSemTemplate.Extensions;
+using AppSemTemplate.Services;
 
 namespace AppSemTemplate.Controllers
 {
@@ -19,10 +20,12 @@ namespace AppSemTemplate.Controllers
     public class ProdutosController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IImageUploadService _imageUploadService;
 
-        public ProdutosController(ApplicationDbContext context)
+        public ProdutosController(ApplicationDbContext context, IImageUploadService imageUploadService)
         {
             _context = context;
+            _imageUploadService = imageUploadService;
         }
 
         // GET: Produtos
@@ -78,7 +81,7 @@ namespace AppSemTemplate.Controllers
             {
                 //Upload
                 var imgPrefixo = Guid.NewGuid() + "-";
-                if (!await UploadArquivo(produto.ImagemUpload, imgPrefixo))//se não der certo o upload
+                if (!await _imageUploadService.UploadArquivo(ModelState, produto.ImagemUpload, imgPrefixo))//se não der certo o upload
                 {
                     return View(produto);
                 }
@@ -135,7 +138,7 @@ namespace AppSemTemplate.Controllers
                     if (produto.ImagemUpload != null)
                     {
                         var imgPrefixo = Guid.NewGuid() + "_";
-                        if (!await UploadArquivo(produto.ImagemUpload, imgPrefixo))
+                        if (!await _imageUploadService.UploadArquivo(ModelState, produto.ImagemUpload, imgPrefixo))
                         {
                             return View(produto);
                         }
@@ -209,25 +212,25 @@ namespace AppSemTemplate.Controllers
             return (_context.Produto?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-        private async Task<bool> UploadArquivo(IFormFile arquivo, string imgPrefixo)//Método - imgprefixo para um arquivo de mesmo nome não sobrepor outro
-        {
-            if (arquivo.Length <= 0) return false;
+        //private async Task<bool> UploadArquivo(IFormFile arquivo, string imgPrefixo)//Método - imgprefixo para um arquivo de mesmo nome não sobrepor outro
+        //{
+        //    if (arquivo.Length <= 0) return false;
 
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgPrefixo + arquivo.FileName);
+        //    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgPrefixo + arquivo.FileName);
 
-            if (System.IO.File.Exists(path))
-            {
-                ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome!");
-                return false;
-            }
+        //    if (System.IO.File.Exists(path))
+        //    {
+        //        ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome!");
+        //        return false;
+        //    }
 
-            //vai pegar o arquivo, transforma-ló em uma file stream e salva-lo no banco
-            using (var stream = new FileStream(path, FileMode.Create))
-            {
-                await arquivo.CopyToAsync(stream);
-            }
+        //    //vai pegar o arquivo, transforma-ló em uma file stream e salva-lo no banco
+        //    using (var stream = new FileStream(path, FileMode.Create))
+        //    {
+        //        await arquivo.CopyToAsync(stream);
+        //    }
 
-            return true;
-        }
+        //    return true;
+        //}
     }
 }
