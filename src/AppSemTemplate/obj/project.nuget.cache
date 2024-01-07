@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GAHM1fOmfmD4RezVQgCetvm1SAYD3qwYPa/zrA3blpOMcxcbT7P/NDFgczpcl5+3bLi1oUPwIjEX9P341/Q3cQ==",
+  "dgSpecHash": "5Lx9F/5xEZElj7qkwhXpUxIaEUhXLJakmUee9TANstqJgSVigXK1V1TN9a1DEZirlbQiE/z/yZjRu3i3ej+mOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vpinh\\OneDrive\\Área de Trabalho\\Desenvolvedor.io\\__3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\AppSemTemplate.csproj",
   "expectedPackageFiles": [
@@ -160,6 +160,7 @@
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\7.0.11\\microsoft.visualstudio.web.codegeneration.7.0.11.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\7.0.11\\microsoft.visualstudio.web.codegeneration.core.7.0.11.nupkg.sha512",
     "C:\\Users\\vpinh\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\7.0.11\\microsoft.visualstudio.web.codegeneration.design.7.0.11.nupkg.sha512",

@@ -1,6 +1,7 @@
 ﻿using AppSemTemplate.Data;
 using AppSemTemplate.Extensions;
 using AppSemTemplate.Services;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +32,7 @@ namespace AppSemTemplate.Configuration
             })
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
                 .AddDataAnnotationsLocalization();
+
 
             builder.Services.Configure<CookiePolicyOptions>(options =>//dadndo suporte a cookies LGPD
             {
@@ -120,7 +122,6 @@ namespace AppSemTemplate.Configuration
 
                 Console.WriteLine("Direto da Program.cs" + singService.OperacaoId);
             }
-
 
             app.MapRazorPages();
 
