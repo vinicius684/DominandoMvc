@@ -34,6 +34,12 @@ namespace AppSemTemplate.Configuration
                 .AddDataAnnotationsLocalization();
 
 
+            //Fazer a criptografia dos tokens(Angiforgery..) quando rodar no Docker
+            builder.Services.AddDataProtection()
+                .PersistKeysToFileSystem(new DirectoryInfo(@"/var/data_protection_keys/"))//Persistir minhas chaves em um diretório do sistema
+                .SetApplicationName("MinhaAppMVC");//minha app mvc que vai interferir em como vai gerar a chave
+
+
             builder.Services.Configure<CookiePolicyOptions>(options =>//dadndo suporte a cookies LGPD
             {
                 options.CheckConsentNeeded = context => true;//verificar consentimento do usuário
@@ -124,6 +130,8 @@ namespace AppSemTemplate.Configuration
             }
 
             app.MapRazorPages();
+
+            DbMigrationHelpers.EnsureSeedData(app).Wait();
 
             return app;
         }
