@@ -1,0 +1,21 @@
+﻿[
+  { //crie um bundle de nome tal com tais arquivos (explicação nas anotações) - em css já cria minify automatico
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/css/bootstrap.css",
+      "wwwroot/css/site.css"
+    ]
+  },
+  { //crie um bundle entre dois arquivos js, minify tem que ser consfigurado
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js",
+      "wwwroot/js/cep.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]//cuidado: funções com msmo nome em dois arquivos vai dar erro

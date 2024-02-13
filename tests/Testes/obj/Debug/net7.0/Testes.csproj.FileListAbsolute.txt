@@ -2,7 +2,6 @@ C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNet
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\testhost.dll
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\AppSemTemplate.deps.json
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\AppSemTemplate.runtimeconfig.json
-C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\appsettings.httpsDevelopment.json
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\appsettings.json
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\bundleconfig.json
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\libman.json
@@ -345,3 +344,5 @@ C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNet
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\obj\Debug\net7.0\Testes.genruntimeconfig.cache
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\obj\Debug\net7.0\ref\Testes.dll
 C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\vpinh\OneDrive\Área de Trabalho\Desenvolvedor.io\__3DominandoAspDotNetMvc\ConhecimentosEssenciais\tests\Testes\bin\Debug\net7.0\appsettings.Docker.json

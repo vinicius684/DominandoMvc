@@ -131,7 +131,7 @@ namespace AppSemTemplate.Configuration
 
             app.MapRazorPages();
 
-            DbMigrationHelpers.EnsureSeedData(app).Wait();
+            //DbMigrationHelpers.EnsureSeedData(app).Wait();
 
             return app;
         }
