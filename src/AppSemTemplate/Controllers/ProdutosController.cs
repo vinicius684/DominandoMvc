@@ -30,7 +30,7 @@ namespace AppSemTemplate.Controllers
 
         // GET: Produtos
         //[Authorize(Policy = "VerProdutos")]
-        [AllowAnonymous]
+        //[AllowAnonymous]
        // [ClaimsAuthorize("Produtos", "VI")]
         public async Task<IActionResult> Index()
         {
@@ -42,7 +42,7 @@ namespace AppSemTemplate.Controllers
         }
 
         // GET: Produtos/Details/5
-        [ClaimsAuthorize("Produtos", "VI")]
+        //[ClaimsAuthorize("Produtos", "VI")]
         [Route("detalhes/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
@@ -62,7 +62,8 @@ namespace AppSemTemplate.Controllers
         }
 
         // GET: Produtos/Create
-        [ClaimsAuthorize("Produtos", "AD")]//customizando autenticação
+        //[ClaimsAuthorize("Produtos", "AD")]//customizando autenticação - Inv para quem não tem permissão
+        [Authorize]
         [Route("criar-novo")]
         public IActionResult CriarNovoProduto()
         {
@@ -73,7 +74,7 @@ namespace AppSemTemplate.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[ValidateAntiForgeryToken]
-        [ClaimsAuthorize("Produtos", "AD")]
+        //[ClaimsAuthorize("Produtos", "AD")]
         [HttpPost("criar-novo")]
         public async Task<IActionResult> CriarNovoProduto([Bind("Id,Nome,ImagemUpload,Valor")] Produto produto)
         {
@@ -97,7 +98,7 @@ namespace AppSemTemplate.Controllers
         }
 
         // GET: Produtos/Edit/5
-        [ClaimsAuthorize("Produtos", "ED")]
+        //[ClaimsAuthorize("Produtos", "ED")]
         [Route("editar-produto/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -117,7 +118,7 @@ namespace AppSemTemplate.Controllers
         // POST: Produtos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [ClaimsAuthorize("Produtos", "ED")]
+       // [ClaimsAuthorize("Produtos", "ED")]
         [HttpPost("editar-produto/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ImagemUpload,Valor")] Produto produto)
@@ -168,7 +169,7 @@ namespace AppSemTemplate.Controllers
         // GET: Produtos/Delete/5
         //[Authorize(Policy = "PodeExcluirPErmanentemente")]
         [Route("excluir/{id}")]
-        [ClaimsAuthorize("Produtos", "EX")]
+        //[ClaimsAuthorize("Produtos", "EX")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Produto == null)
@@ -190,7 +191,7 @@ namespace AppSemTemplate.Controllers
         // [Authorize(Policy = "PodeExcluirPErmanentemente")]
         [HttpPost("excluir/{id}"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [ClaimsAuthorize("Produtos", "EX")]
+       // [ClaimsAuthorize("Produtos", "EX")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Produto == null)

@@ -1,0 +1,387 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\appsettings.docker.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\appsettings.docker.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\novo_minha-mvc.publishsettings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\novo_minha-mvc.publishsettings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\extensions\\botaotaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\extensions\\botaotaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\extensions\\routeslugifyparametertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\extensions\\routeslugifyparametertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\configuration\\mvcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\configuration\\mvcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\program - c\u00F3pia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\program - c\u00F3pia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\configuration\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\configuration\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\configuration\\mvcoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\configuration\\mvcoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\configuration\\apiconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\configuration\\apiconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\configuration\\dbmigrationhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\configuration\\dbmigrationhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\home\\cookie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\home\\cookie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_3dominandoaspdotnetmvc\\conhecimentosessenciais\\src\\appsemtemplate\\views\\dilifecycle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB53A8F6-7841-471D-A2F1-5CCA19B976C0}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\dilifecycle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\appsettings.json",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\appsettings.json",
+              "RelativeToolTip": "src\\AppSemTemplate\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T13:42:11.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\appsettings.Development.json",
+              "RelativeToolTip": "src\\AppSemTemplate\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T13:42:04.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Docker.json",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\appsettings.Docker.json",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\appsettings.Docker.json",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\appsettings.Docker.json",
+              "RelativeToolTip": "src\\AppSemTemplate\\appsettings.Docker.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T13:41:59.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "novo_minha-mvc.PublishSettings",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\novo_minha-mvc.PublishSettings",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\novo_minha-mvc.PublishSettings",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\novo_minha-mvc.PublishSettings",
+              "RelativeToolTip": "src\\AppSemTemplate\\novo_minha-mvc.PublishSettings",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-21T13:41:56.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BotaoTagHelper.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Extensions\\BotaoTagHelper.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Extensions\\BotaoTagHelper.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Extensions\\BotaoTagHelper.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Extensions\\BotaoTagHelper.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T15:00:37.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteSlugifyParameterTransformer.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Extensions\\RouteSlugifyParameterTransformer.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Extensions\\RouteSlugifyParameterTransformer.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Extensions\\RouteSlugifyParameterTransformer.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Extensions\\RouteSlugifyParameterTransformer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:51:07.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MvcConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:46:45.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:37:57.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:28.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Details.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Details.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:34.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:40.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Program.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Program.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Program.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:46:34.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DependencyInjectionConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\DependencyInjectionConfig.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Configuration\\DependencyInjectionConfig.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\DependencyInjectionConfig.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Configuration\\DependencyInjectionConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:53:06.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program - C\u00F3pia.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Program - C\u00F3pia.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Program - C\u00F3pia.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Program - C\u00F3pia.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Program - C\u00F3pia.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:51:57.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MvcOptions.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\MvcOptions.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Configuration\\MvcOptions.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\MvcOptions.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Configuration\\MvcOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:52:07.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DbMigrationHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\DbMigrationHelpers.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Configuration\\DbMigrationHelpers.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\DbMigrationHelpers.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Configuration\\DbMigrationHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:46:43.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApiConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\ApiConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Configuration\\ApiConfiguration.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\ApiConfiguration.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Configuration\\ApiConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:46:41.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Edit.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Edit.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:35.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Delete.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Delete.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:32.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:16.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Cookie.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:14.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\DiLifecycle\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\DiLifecycle\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_3DominandoAspDotNetMvc\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\DiLifecycle\\Index.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\DiLifecycle\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T14:23:06.934Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 333,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

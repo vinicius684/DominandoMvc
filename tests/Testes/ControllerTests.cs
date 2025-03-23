@@ -89,7 +89,7 @@ namespace Testes
         [Fact]
         public void ProdutoController_CriarNovoProduto_Sucess()
         {
-            
+
             // Arrange
 
             // Dbcontext Options
@@ -120,7 +120,7 @@ namespace Testes
             //produto
             var produto = new Produto
             {
-                Id=1,
+                Id = 1,
                 ImagemUpload = fileMock.Object,
                 Nome = "Teste",
                 Valor = 50
